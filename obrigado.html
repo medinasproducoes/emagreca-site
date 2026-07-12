@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra Confirmada — Emagreça Sem Passar Fome | Medina'S Produções</title>
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- TIKTOK PIXEL -->
+<script>
+  !function (w, d, t) { w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+  ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=i;ttq._t=ttq._t||{};ttq._t[e]=+new Date;ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+  ttq.load('D93M0A3C77UARCKAUFB0'); ttq.page(); }(window, document, 'ttq');
+</script>
+
+<style>
+:root{--cream:#FAF6EE;--terracotta:#C2542D;--terracotta-deep:#9C3E1F;--olive:#3D4A2E;--charcoal:#23211D;--paper:#FFFDF8;--gold:#C99A3C;--cinza-claro:#8296A3;--line:rgba(35,33,29,.12)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--charcoal);line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
+h1,h2{font-family:'Fraunces',serif;color:var(--charcoal);font-weight:600}
+.serif-em{font-style:italic;color:var(--terracotta);font-weight:500}
+.topbar{background:var(--charcoal);padding:16px 0}
+.topbar .container{max-width:680px;margin:0 auto;padding:0 24px;color:#fff;font-family:'Fraunces',serif;font-weight:600}
+.topbar span{color:var(--terracotta)}
+main{flex:1;max-width:600px;margin:0 auto;padding:56px 24px;width:100%}
+.hidden{display:none}
+@keyframes girar{to{transform:rotate(360deg)}}
+.spinner{animation:girar 1s linear infinite}
+.icone{width:76px;height:76px;background:var(--olive);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;color:var(--gold);box-shadow:0 14px 30px rgba(35,33,29,.2)}
+.btn{display:inline-block;background:var(--terracotta);color:var(--paper);font-weight:700;padding:17px 34px;border-radius:100px;text-decoration:none;border:none;cursor:pointer;font-size:16px;font-family:'Inter';box-shadow:0 10px 24px -8px rgba(194,84,45,.55)}
+.btn:hover{background:#A8451F}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 30px;margin-bottom:20px}
+input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font-size:14px;margin-top:6px;font-family:'Inter'}
+label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--charcoal)}
+.field{margin-bottom:16px}
+.mono-note{font-size:13px;color:var(--cinza-claro)}
+</style>
+</head>
+
+<body>
+<div class="topbar"><div class="container">Emagreça <span>Sem Passar Fome</span></div></div>
+<main>
+  <div id="estado-verificando" style="text-align:center;padding:90px 0">
+    <svg class="spinner" width="46" height="46" viewBox="0 0 24 24" style="color:var(--terracotta)"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" opacity="0.25"/><path d="M12 2a10 10 0 0110 10" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+    <p class="mono-note" style="margin-top:18px">Verificando seu pagamento...</p>
+  </div>
+
+  <div id="estado-sucesso" class="hidden">
+    <div style="text-align:center;margin-bottom:32px">
+      <div class="icone"><svg width="34" height="34" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></div>
+      <h1>Pagamento <span class="serif-em">confirmado!</span></h1>
+      <p style="color:var(--cinza-claro);margin-top:10px">Seu acesso ao método já está liberado.</p>
+    </div>
+    <div class="card" style="text-align:center">
+      <a href="assets/emagreca-sem-passar-fome.pdf" class="btn" download>Baixar meu Guia Agora</a>
+      <p class="mono-note" style="margin-top:16px">Salve este link — seu acesso é vitalício.</p>
+    </div>
+  </div>
+
+  <div id="estado-manual" class="hidden">
+    <div style="text-align:center;margin-bottom:32px">
+      <div class="icone"><svg width="34" height="34" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></div>
+      <h1>Falta só <span class="serif-em">confirmar</span></h1>
+      <p style="color:var(--cinza-claro);margin-top:10px">Em instantes liberamos seu acesso.</p>
+    </div>
+    <div class="card">
+      <h2 style="font-size:18px;margin-bottom:18px">Confirme sua compra</h2>
+      <div class="field"><label>Seu nome</label><input type="text" id="conf-nome"></div>
+      <div class="field"><label>E-mail usado na compra</label><input type="email" id="conf-email"></div>
+      <div class="field"><label>Valor pago (opcional)</label><input type="text" id="conf-valor" placeholder="Ex: R$ 42,90"></div>
+      <button class="btn" style="width:100%" onclick="irParaContato()">Falar com o Suporte</button>
+    </div>
+  </div>
+</main>
+<footer style="background:var(--charcoal);color:#9AA396;text-align:center;padding:28px 0;font-size:13px">
+  © 2026 Emagreça Sem Passar Fome — Medina'S Produções.
+</footer>
+
+<script>
+const HANDLE_INFINITEPAY = 'medina_pay';
+
+function mostrarEstado(id) {
+  ['estado-verificando', 'estado-sucesso', 'estado-manual'].forEach(estado => {
+    document.getElementById(estado).classList.toggle('hidden', estado !== id);
+  });
+}
+
+async function verificarPagamento() {
+  const params = new URLSearchParams(window.location.search);
+  const order_nsu = params.get('order_nsu');
+  const transaction_nsu = params.get('transaction_nsu');
+  const slug = params.get('slug');
+
+  if (!order_nsu || !transaction_nsu || !slug) {
+    mostrarEstado('estado-manual');
+    return;
+  }
+
+  mostrarEstado('estado-verificando');
+
+  try {
+    const resp = await fetch('/api/verify-payment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ handle: HANDLE_INFINITEPAY, order_nsu, transaction_nsu, slug })
+    });
+    const data = await resp.json();
+
+    if (data.paid === true) {
+      if (window.ttq) ttq.track('CompletePayment', { value: 42.90, currency: 'BRL' });
+      mostrarEstado('estado-sucesso');
+    } else {
+      mostrarEstado('estado-manual');
+    }
+  } catch (err) {
+    console.error('Erro ao verificar pagamento:', err);
+    mostrarEstado('estado-manual');
+  }
+}
+
+function irParaContato() {
+  const nome = document.getElementById('conf-nome').value.trim();
+  const email = document.getElementById('conf-email').value.trim();
+  const valor = document.getElementById('conf-valor').value.trim();
+  if (!nome || !email) { alert('Preencha nome e e-mail antes de enviar.'); return; }
+  const params = new URLSearchParams({ nome, email, assunto: 'Pagamento não confirmado' });
+  if (valor) params.set('valor', valor);
+  window.location.href = `contato.html?${params.toString()}`;
+}
+
+verificarPagamento();
+</script>
+</body>
+</html>
